@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-slate-900"> <!-- Dark bg to prevent white flash -->
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Damon Service | Project Portfolio</title>
+    <meta name="description" content="شرکت دامون سرویس، نماینده انحصاری سیستم‌های تهویه مطبوع Mitsubishi Electric و Climaveneta در ایران.">
+    
+    <!-- 1. Preconnect to Image CDN & Font CDN with crossorigin -->
+    <link rel="preconnect" href="https://images.unsplash.com" crossorigin />
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+
+    <!-- 2. Responsive Preload for LCP Image -->
+    <link 
+      rel="preload" 
+      as="image" 
+      href="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&q=75&w=1920&fm=webp"
+      imagesrcset="
+        https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&q=75&w=640&fm=webp 640w,
+        https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&q=75&w=1200&fm=webp 1200w,
+        https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&q=75&w=1920&fm=webp 1920w
+      "
+      imagesizes="100vw"
+      fetchpriority="high"
+    />
+
+    <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet" type="text/css" />
+    <style>
+      /* Critical CSS */
+      body { font-family: 'Vazirmatn', sans-serif; margin: 0; }
+      /* Ensure font is swapped immediately */
+      @font-face {
+        font-family: 'Vazirmatn';
+        font-display: swap; 
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
